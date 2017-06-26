@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% for one in quizzs %}
+<div class="quizz centered">
+	<div class="quizz-header">
+		<h1 class="centered">{{one.name}}</h1>
+		<h2 class="centered">By {{one.author}}</h2>
+	</div>
+	<div class="quizz-body">
+		<p>{{one.description}}</p>
+	</div>
+	<a class="important" href="{{ path('edit_quizz', {'quizzId': one.id}) }}">Edit this quizz</a>
+</div>
+{% endfor %}
+{% endblock %}

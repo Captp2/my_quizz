@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+html{
+    min-height:100%;
+    position:relative;
+}
+
+body{
+	background-color: #eeeeee;
+	font-family: Raleway;
+}
+
+h1{
+	font-size: 1.8em;
+	padding: 10px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+#header{
+	background-color: #303030;
+	height: 50px;
+}
+
+#header a{
+	display: block;
+	font-size: 1.5em;
+	padding: 10px;
+	/*padding-top: 15px;*/
+}
+
+#header * {
+	float: left;
+	display: block;
+	font-size: 1.5em;
+	padding: 10px;
+	color: #CECECE;
+}
+
+.text-primary{
+	color: #606060;
+}
+
+.centered{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.quizz{
+	background-color: #999999;
+	width: 800px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.quizz-author{
+	text-align: right;
+	float: right;
+}
+
+.quizz-header{
+	background-color: #333333;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	padding: 5px;
+}
+
+.quizz-body{
+	padding: 5px;
+}
+
+.form{
+	background-color: #999999;
+	width: 800px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.form input{
+	width: 780px;
+}
+
+.form textarea{
+	max-width: 780px;
+	min-width: 780px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #606060;
+    color: white;
+}
+
+.button{
+	border: 1px solid #606060;
+}
+
+.float-right{
+	display: block;
+	float: right;
+}
+
+.error{
+	color: red;
+}
+
+.success{
+	color: green;
+}

@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% for one in quizz %}
+<div class="quizz centered">
+	<div class="quizz-header">
+		<h1 class="centered">{{one.name}}</h1>
+		<h2 class="centered">By {{one.author}}</h2>
+	</div>
+	<div class="quizz-body">
+		<p>{{one.description}}</p>
+		<br/>
+		{% for question in one.questions %}
+		<p>{{question.value}}</p>
+		<br/>
+		{% endfor %}
+	</div>
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div id="wrapper">
+	<div id="container">
+		<div id="welcome">
+			<h1 class="text-primary centered">Welcome to My Quiz</h1>
+		</div>
+		<div id="display-quizz">
+			{% for quizz in quizzs %}
+			<div class="quizz centered">
+				<div class="quizz-header">
+					<p>{{quizz.name}}<span class="quizz-author">{{quizz.author}}</span></p>
+				</div>
+				<div class="quizz-body">
+					<p>{{quizz.description}}</p>
+					<a href="{{ path('see_quizz', {'quizzId': quizz.id})}}">Try it</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}
